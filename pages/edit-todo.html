@@ -13,27 +13,27 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">TODO-Tracker</a>
+        <span class="navbar-brand unselectable">TODO-Tracker</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Übersicht<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Übersicht</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Impressum</a>
+                    <a class="nav-link" href="impressum.html">Impressum</a>
                 </li>
 
             </ul>
         </div>
     </nav>
 </header>
-<main>
+<main class="mt-3">
     <div class="container">
-        <h2>Edit your TODO</h2>
+        <h2 class="mb-3">Bearbeite deine Aufgabe</h2>
         <form method="post">
             <div class="form-group">
                 <label for="todoText">TODO-Text:</label>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="form-group col-md-7">
 
-                    <label for="percentReady">Percent ready: </label>
+                    <label for="percentReady">Fortschritt: </label>
                     <div class="input-group input-group-sm col-md-3 col-lg-2 p-0">
                         <input type="number" id="rangeValue" name="percent" class="form-control" min="0" max="100" step="0.5" maxlength="4">
                         <div class="input-group-append">
@@ -59,7 +59,7 @@
                 </div>
 
             </div>
-            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="submit" class="btn btn-primary">Speichern</button>
         </form>
     </div>
 </main>
